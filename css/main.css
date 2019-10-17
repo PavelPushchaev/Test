@@ -1,0 +1,621 @@
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: roboto;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+}
+.content {
+    position: relative;
+    text-align: center;
+    max-width: 768px;
+}
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 51px 0;
+}
+
+.title {
+    text-align: center;
+    color: #000000;
+    font-weight: 100;
+    font-size: 66px;
+    margin: 119px 0 63px 0;
+
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    border: none;
+    min-height: 80px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    /*margin-bottom: 10px;*/
+    padding: 0 0 0 55px !important;
+    text-decoration: none;
+    margin: 0;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 80px !important;
+    text-align: center;
+    color: #435993;
+
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    background: none;
+}
+.navbar-toggle {
+    background-color:#fbf6f6;
+    cursor: pointer;
+}
+.navbar-toggle .icon-bar {
+    background-color:#1c1c1c;
+}
+nav ul .active > li{
+ color: #1c1c1c;
+}
+
+.navbar-nav>.active>a {
+    color:#1c1c1c;
+}
+
+
+
+
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+.own-info {
+    padding: 25px 0 28px 0;;
+}
+.experience {
+    padding: 0 0 98px 0;
+}
+.experience h2 {
+    padding: 25px 0 0 0;
+}
+.js-info {
+    padding: 20px 0 89px 0;
+
+}
+.js-info h2{
+    padding: 25px 0 0 0;
+
+}
+.about {
+
+}
+.about h2{
+    padding: 25px 0 15px 0;
+    margin: 0;
+}
+
+
+ /* Form */
+
+ .form-control {
+    width: 100%;
+    margin: 0;
+    max-width: 320px;
+    height: 60px;
+    border-radius: 5px;
+    border: solid 1px #e5e5e5;
+    color: #c8c8c8;
+    font-size: 24px;
+    box-shadow: none;
+ }
+ .form-control > option{
+    font-weight: bold;
+    color: #435993;
+
+ }
+
+
+ .wrap {
+    margin: 0 auto;
+  }
+  
+  .mat-label {
+    display: block;
+    font-size: 24px;
+    transform: translateY(25px);
+    color: #c8c8c8;
+    transition: all 0.5s;
+  }
+  
+  .mat-input {
+    position: relative;
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+  }
+  
+  .mat-div {
+    position: relative;
+    border: solid 1px #e5e5e5;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  .mat-div > label {
+      margin: 0;
+  }
+  .mat-div:after, .mat-div:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    max-width: 520px;
+    border-radius: 5px;
+
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+  }
+  
+
+
+  .mat-div::after {
+    transform: scaleX(0);
+  }
+  
+.mat-div > input {
+    text-align: center;
+
+}
+
+  .is-active::after {
+    transform: scaleX(1);
+  }
+  
+  .is-active .mat-label {
+      padding-top: 5px;
+    font-size: 14px;
+  }
+  
+  .is-completed .mat-label {
+    font-size: 14px;
+    transform: translateY(0);
+  }
+ 
+  #myinput {
+    background: linear-gradient(to right, rgba(204,177,241,1) 0%, rgba(67,88,147,1) 100%);
+    height: 15px;
+    width:100%;
+    max-width: 768px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+
+    /* Thumb */
+  /* Special styling for WebKit/Blink */
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 23px;
+    height: 26px;
+    background: url(../img/range-thumb.png);
+    cursor: pointer;
+    margin-top: 40px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  }
+
+  /* All the same stuff for Firefox */
+  input[type=range]::-moz-range-thumb {
+    width: 23px;
+    height: 26px;
+    cursor: pointer;
+    background: url(../img/range-thumb.png);
+
+  }
+
+  /* All the same stuff for IE */
+  input[type=range]::-ms-thumb {
+    height: 36px;
+    width: 16px;
+    background: url(../img/range-thumb.png);
+    cursor: pointer;
+  }
+
+
+
+
+
+ form ul {
+    text-align: left;;
+}
+
+form ul li {
+    list-style: none;
+}
+
+
+/*
+width: 20px;
+height: 20px;
+border-radius: 3px;
+border: solid 1px #435993;
+background-color: #ffffff;
+
+
+*/
+
+.content .checkbox label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.checkbox label:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .checkbox .cr {
+    position: relative;
+    display: inline-block;
+    float:left;
+    margin-right: .5em;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: solid 1px #435993;
+    
+  }
+
+  .checkbox .cr:hover {
+    background-color: #e9efff;
+
+  }
+
+  .checkbox .cr .cr-icon {
+    position: absolute;
+    line-height: 0;
+    top: 50%;
+    left: 15%;
+    color: white;
+  }
+  
+  .checkbox label input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkbox label input[type="checkbox"]+.cr>.cr-icon {
+    opacity: 0;
+  }
+  
+  .checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+    opacity: 1;
+  }
+  .checkbox label input[type="checkbox"]:checked+.cr {
+    background-color: #435993;
+  }
+  .checkbox label input[type="checkbox"]:disabled+.cr {
+    opacity: .5;
+  }
+ 
+.range-block {
+    text-align: left;
+    font-weight: bold;
+}
+
+
+textarea {
+    border-radius: 5px;
+    border: solid 1px #e5e5e5;
+    background-color: #d9d9d9;
+    font-weight: bold;
+    font-size: 20px;
+}
+p {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 30px 0;
+}
+.ready-button {
+    width: 116px;
+    height: 51px;
+    background-color: #435993;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    margin: 50px 0 50px 0 ;
+}
+
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+   nav {
+       display: block;
+}
+
+/* ============
+WIDE: Main
+============ */
+.main {/*
+    background-image: url(../img/background.jpg);
+    background: url(../img/background.jpg) no-repeat left top, linear-gradient(#eb01a5, #d13531);    
+height: 100%;
+
+
+background-image: url(../img/background.jpg); /* fallback 
+
+background-image: linear-gradient(to top, white 0%,rgba(0,0,0,0.7) 100%), url(../img/background.jpg);*/
+/*
+background-size: cover;
+
+background-repeat: no-repeat;
+
+background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,
+              rgba(255,255,255,1) 10%), url(../img/background.jpg);*/
+}
+
+}
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+   @media only screen and (min-width: 480px) {
+
+    /* ====================
+        INTERMEDIATE: Menu
+       ==================== */
+    
+        nav a {
+            float: left;
+            /*width: 27%;*/
+            margin-bottom: 0;
+        }
+    
+        nav li:first-child a {
+            margin-left: 0;
+            padding-left: 0;
+        }
+    
+        nav li:last-child a {
+            margin-right: 0;
+        }
+    
+    /* ========================
+        INTERMEDIATE: IE Fixes
+       ======================== */
+    
+        nav ul li {
+            display: inline;
+        }
+    
+        .oldie nav a {
+            margin: 0 0.7%;
+        }
+    }
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .navbar-toggle {
+        float: right;
+    }
+    nav li:first-child a {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    nav li: a {
+        
+        padding-left: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        /* width: 1026px;  1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
